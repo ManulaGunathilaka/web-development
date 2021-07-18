@@ -1,0 +1,32 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<form>
+	<fieldset>
+	<legend>Car Registration</legend>
+		<p>Owner name:<input type="textbox" name = "oname" placeholder="Owner name" ></p>
+		<p>E-mail:<input type="textbox" name = "mail" placeholder="e-mail" ></p>
+		<p>Phone number:<input type="textbox" name="phone number"
+		placeholder="phone number"></p>
+		Country:<select name="Country">
+		<option value=1> America</option>
+		<option value=2> Sri lanka</option>
+		<option value=3> India</option>
+		</select><br><br>
+		<p>Car model:<input type ="textbox" name="car model"size="4"></p>
+		Manufacture year:<select name="year"placeholder="Select year">
+		<option value=1>2010</option>
+		<option value=1>2011</option>
+		<option value=1>2012</option>
+		</select></p><br>
+		Transmission:<input type="radio" name="tran" value=0>Manual
+				<input type="radio" name="tran" value=1>Auto<br><br>
+				
+		<p>other:<input type="box" name ="oth"size="10"></p>
+		<input type="checkbox" name="q1"value=o1>I agree to the conditions and terms
+		<input type="submit"name="sign"value="submit">
+		<input type="reset" name="rst" value="Reset"
+</body>
+</html>
