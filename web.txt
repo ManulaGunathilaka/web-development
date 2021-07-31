@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Two</title>
 </head>
+<script>
+ function playVideo(){
+ document.getElementById("video").play()
+ }
+</script>
 <body>
- <p id="date"></p>
- <p id="time"></p>
- <script>
-     var date = new Date();
-     document.getElementById("date").innerText = "Date : "+date.getDate() +"/"+( date.getMonth()+1);
-     document.getElementById("time").innerText = "TIme :" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-
- </script>   
-
+ <video src="video.mp4" autoplay="" id="video" onmouseover="playVideo()"> 
+ </video>
 </body>
 </html>
