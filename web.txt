@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Two</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<script>
- function playVideo(){
- document.getElementById("video").play()
- }
-</script>
 <body>
- <video src="video.mp4" autoplay="" id="video" onmouseover="playVideo()"> 
- </video>
+   <select id="select">
+       <option class="item">Item</option>
+       <option class="item">Item</option>
+
+   </select>
+
+   <button id="remove">Remove</button>
+    
 </body>
+<script>
+    document.getElementById("remove").addEventListener('click',function(){
+        var items = document.getElementsByClassName("item");
+        document.getElementById("select").removeChild(items[0]);
+    })
+</script>
 </html>
