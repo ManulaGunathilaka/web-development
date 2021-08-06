@@ -1,0 +1,19 @@
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+function x()
+{
+    alert("This is a alert");
+}
+</script>
+<form name="f">
+<input type="button" name="d" value="Button" onClick="x()">
+
+</form>
+</script>
+</body>
+</html>
+
