@@ -1,0 +1,19 @@
+<html>
+<head>
+<title></title>
+<script language=”javascript” type=”text/javascript”>
+var nicNo = prompt(“Enter your NIC Number”);
+var len = nicNo.length;
+if(len==10)
+{
+alert(“Birthday:19”+nicNo.substring(0,2));
+}
+else if(len==12)
+{
+alert(“Birthday:”+nicNo.substring(0,4);
+}
+</script>
+</head>
+<body>
+</body>
+</html>
