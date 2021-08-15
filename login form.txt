@@ -1,0 +1,160 @@
+<html>
+<head>
+<style>
+#body
+{
+border:1px solid black;
+width:425px;
+height:460px;
+}
+.con
+{
+width:380px;
+margin-left:auto;
+margin-right:auto;
+background-color:#e6e8ff;
+padding:10px;
+}
+table
+{
+font-size:17px;
+width:500px;
+height:300px;
+padding:10px;
+}
+button
+{
+padding:5px 14px;
+font-size:15px;
+}
+</style>
+</head>
+<body>
+<div id="body">
+<h1 align="center">Registration Form</h1>
+<div class="con">
+<form name="form" method="POST" action="output.php" target="blank">
+<table>
+<tr>
+<td><lable>First Name</lable></td>
+<td><input type="text" name="fname" placeholder="Enter First 
+Name"></td>
+</tr>
+<tr>
+<td><lable>Last Name</lable></td>
+<td><input type="text" name="lname" placeholder="Enter Last 
+Name"></td>
+</tr>
+<tr>
+<td><lable>User Name</lable></td>
+<td><input type="text" name="uname" placeholder="Enter 
+Username"></td>
+</tr>
+<tr>
+<td><lable>Password</lable></td>
+<td><input type="password" name="pswd" placeholder="Enter 
+Password"></td>
+</tr>
+<tr>
+<td><lable>Gender</lable></td>
+<td>
+<input type="radio" name="gen" value="male">Male
+<input type="radio" name="gen" value="female">Female
+</td>
+</tr>
+<tr>
+<td><lable>Academic Year</lable></td>
+<td>
+<select name="acyr">
+<option value="0">Select Year</option>
+<option value="1st Year">1st Year</option>
+<option value="2nd Year">2nd Year</option>
+<option value="3rd Year">3rd Year</option>
+<option value="4th Year">4th Year</option>
+</select>
+</tr>
+<tr>
+<td><lable>Email</lable></td>
+<td><input type="email" name="email" placeholder="Enter Email 
+Address"></td>
+</tr>
+<tr>
+<td><lable>Phone Number</lable></td>
+<td><input type="text" name="phno" placeholder="Enter Phone 
+Number"></td>
+</tr>
+</table>
+<center><button type="submit" name="btn1" 
+value="Submit">Submit</button></center>
+</form>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+Output.php
+<html>
+<head>
+<style>
+table
+{
+font-size:20px;
+width:450px;
+height:300px;
+background-color:#e6e8ff;
+}
+</style>
+<body>
+<h2>Output :-</h2>
+<?php
+$firname = $_REQUEST["fname"];
+$lstname = $_REQUEST["lname"];
+$urname = $_REQUEST["uname"];
+$psw = $_REQUEST["pswd"];
+$gend = $_REQUEST["gen"];
+$acdyr = $_REQUEST["acyr"];
+$eml = $_REQUEST["email"];
+$ph = $_REQUEST["phno"];
+echo"<table border=1>";
+echo"<tr>";
+echo"<td>First Name</td>";
+echo"<td>$firname</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>Last Name</td>";
+echo"<td>$lstname</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>User Name</td>";
+echo"<td>$urname</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>Password</td>";
+echo"<td>$psw</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>Gender</td>";
+echo"<td>$gend</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>Acadamic Year</td>";
+echo"<td>$acdyr</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>Email</td>";
+echo"<td>$eml</td>";
+echo"</tr>";
+echo"<tr>";
+echo"<td>Phone Number</td>";
+echo"<td>$ph</td>";
+echo"</tr>";
+echo"</table>";
+?>
+</body>
+</html>
