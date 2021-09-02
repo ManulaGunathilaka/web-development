@@ -1,25 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+	.a 
+	{
+		border: 1px solid black;
+		width: 455px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 155px;
+	}
+
+	td
+	{
+		padding: 5px;
+	}
+
+	</style>
 </head>
 <body>
-   <select id="select">
-       <option class="item">Item</option>
-       <option class="item">Item</option>
-
-   </select>
-
-   <button id="remove">Remove</button>
-    
+	<div class="a">
+	<table border=1>
+	<form name="insert" method="POST" action="insert.php">
+			<tr>
+				<td colspan="2" align="center" bgcolor="yellow">- I N S E R T -</td>
+			</tr>
+			<tr>
+				<td>Enter Your name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Enter Password</td>
+				<td><input type="Password" name="ps"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="sub" value="Submit"></td>
+			</tr>
+	</form>
+	<form name="update" method="POST" action="update.php">
+			<tr>
+				<td colspan="2" align="center" bgcolor="yellow">- U P D A T E -</td>
+			</tr>
+			<tr>
+				<td>Enter your name to update the password</td>
+				<td><input type="text" name="upname"></td>
+			</tr>
+			<tr>
+				<td>Update Password</td>
+				<td><input type="Password" name="upps"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="subm" value="Update"></td>
+			</tr>
+	</form>	
+	<form name="update" method="POST" action="delete.php">
+			<tr>
+				<td colspan="2" align="center" bgcolor="yellow">- D E L E T E &nbsp&nbspS E C T I O N -</td>
+			</tr>
+			<tr>
+				<td>Enter your name to delete the record</td>
+				<td><input type="text" name="delname"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="del" value="Delete"></td>
+			</tr>
+	</form>
+	<form name="retrieve" method="POST" action="retrieve.php">
+			<tr>
+				<td colspan="2" align="center" bgcolor="yellow">- R E T R I E V E -</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="ret" value="retrieve"></td>
+			</tr>
+	</form>
+	</table>
+	</div>
 </body>
-<script>
-    document.getElementById("remove").addEventListener('click',function(){
-        var items = document.getElementsByClassName("item");
-        document.getElementById("select").removeChild(items[0]);
-    })
-</script>
 </html>
